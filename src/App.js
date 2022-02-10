@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Button from "./components/Button";
 import ButtonClass from "./components/ButtonClass";
+import Form from "./components/Form";
 
 function App() {
   const [text, setText] = useState("Cliccami");
@@ -17,6 +18,8 @@ function App() {
       <Button text={text} handleClick={handleClick} />
       
       <ButtonClass/>
+
+      <Form/>
     </div>
   );
 }

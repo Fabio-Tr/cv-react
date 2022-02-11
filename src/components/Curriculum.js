@@ -58,7 +58,7 @@ function Curriculum() {
                         2021 <br/>
                         <strong className="yellow-text">Aulab Hackademy</strong> <br/>
                         Coding Bootcamp per Web Developers <br/>
-                        Console Linux, pagine statiche Html/Css, basi di Javascript, Bootstrap 4 (Grid
+                        Console Linux, pagine statiche Html/Css, basi di Javascript, Bootstrap (Grid
                         system),
                         GitLab,
                         Seo

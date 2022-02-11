@@ -1,7 +1,22 @@
-function Masthead() {
+import { useSpring, animated } from 'react-spring'
 
+function Masthead() {
+    
+    
+    
+  const styles = useSpring({
+    loop: true,
+    to: [
+      { opacity: 1, color: '#ffaaee' },
+      { opacity: 0, color: 'rgb(14,26,19)' },
+    ],
+    from: { opacity: 0, color: 'red' },
+  })
+    
+    
+    
     return (
-        <div className="container masthead justify-content-center"> 
+        <div className="container masthead justify-content-center">
 
             <div className="row d-flex justify-content-center">
 
@@ -17,12 +32,13 @@ function Masthead() {
                     <div className="row justify-content-center d-flex align-items-center">
 
                         <h2 className="col-12 yellow-text font-gothic" id="aboutTitle">ABOUT ME</h2>
+                        <animated.div style={styles} className="bg-white" >I will fade in</animated.div>
                         <p className="col-12 pt-3">
                             Mi chiamo <strong>Fabio Trani</strong>, ho 31 anni e sono un <strong>Junior Full-Stack Web
                                 Developer</strong> abile nelle
                             metodologie agili.<br /><br />
                             La mia formazione si è concretizzata tramite il <strong>Coding Bootcamp per Web Developers
-                                di Aulab</strong>
+                                di Aulab </strong>
                             che
                             mi
                             ha
